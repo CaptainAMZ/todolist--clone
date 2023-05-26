@@ -1,0 +1,32 @@
+@media (min-width: 576px) {
+  body {
+    padding: 5rem 2rem;
+  }
+
+  .container {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 55%;
+  }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 45%;
+      }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 70%;
+  }
+  .right {
+    flex-basis: 50%;
+    padding: 4rem;
+  }
+  .left {
+    flex-basis: 50%;
+    display: flex;
+  }
+}

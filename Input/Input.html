@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/Style.css" />
+    <link rel="stylesheet" href="./styles/Responsive.css" />
+    <script src="./script/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left"></div>
+      <div class="right">
+        <div class="icon">
+          <img class="icon_image" src="./images/google-pay-icon.svg" alt="" />
+        </div>
+        <div class="intro">
+          <p class="intro_title">Hello Again!</p>
+          <p class="intro_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At maxime
+            harum optio!
+          </p>
+        </div>
+        <form action="#">
+          <div class="inputs">
+            <div class="input-Container">
+              <input placeholder="Name" type="name" reg="^[a-zA-Z]{1,15}$" />
+              <span class="name-warn">Invalid username</span>
+            </div>
+            <div class="input-Container">
+              <input placeholder="E-mail" type="email" reg="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"/>
+              <span class="email-warn" >Invalid E-mail address</span>
+            </div>
+            <div class="input-Container">
+              <input placeholder="Password" type="password" reg="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"/>
+              <span class="password-warn" >Invalid password</span>
+            </div>
+            
+            <div class="recovery">
+              <div class="recovery_memmory">
+                <input id="check" type="checkbox" />
+                <label for="check">Remember Me</label>
+              </div>
+              <a href="#" class="recovery_link">Recovery password</a>
+            </div>
+          </div>
+          <div class="btn">
+            <div class="btn-container">
+              <button class="submit" type="submit">Login</button>
+            </div>
+            <div class="btn-container">
+              <button class="submitGoogle" type="submit">
+                <img
+                  class="submitGoogle_image"
+                  src="./images/google-icon.svg"
+                  alt=""
+                />
+
+                <p class="submitgoolge_text">Sign in with Google</p>
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="signUp">
+          <p class="signUp_text">Don't have an account yet?</p>
+          <a href="#" class="signUp_link">Sign up</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
